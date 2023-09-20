@@ -9,12 +9,9 @@ Console.WriteLine("Введите целое число");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int remainder = number%2;
-if (remainder > 0)
-{
-    Console.WriteLine("нет");
-}
-
-else 
+if (remainder == 0)
 {
     Console.WriteLine("да");
 }
+
+else Console.WriteLine("нет");
