@@ -13,6 +13,5 @@ if (number > 1)
         Console.Write($" {count}, ");
         count = count + 2;
     }
-
 }
 else Console.WriteLine("Некорректный ввод");
