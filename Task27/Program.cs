@@ -4,15 +4,31 @@
 82 -> 10
 9012 -> 12*/
 
-Console.WriteLine("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
-if (number < 0) number*= -1; 
+// Console.WriteLine("Введите число");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int sum = 0;
+// if (number < 0) number*= -1; 
 
-while (number > 0)
+// while (number > 0)
+// {
+// int num = number  % 10;
+// number = number / 10;
+// sum = sum + num;
+// }
+// Console.WriteLine($"Сумма всех цифр в числе равна:  {sum}");
+
+int SumAllDigit(int number)
 {
-int num = number  % 10;
-number = number / 10;
-sum = sum + num;
+    int result = 0;
+    while (number > 0)
+    {
+        result += number % 10;
+        number = number / 10;
+    }
+    return result;
 }
-Console.WriteLine($"Сумма всех цифр в числе равна:  {sum}");
+
+Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"сумма всех числе в {num} = {SumAllDigit(num)}");
