@@ -38,10 +38,11 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
+
+Console.WriteLine("ввeдите число для поиска");
+int num = Convert.ToInt32(Console.ReadLine());
 int[] array = CreateArrayRndInt(5, -10, 10);
 PrintArray(array);
-Console.WriteLine("ввидите число для поиска");
-int num = Convert.ToInt32(Console.ReadLine());
 bool result = FindNumber(array, num);
 
 Console.WriteLine(result? "искомое число найдено" : "искомое число не найдено");
