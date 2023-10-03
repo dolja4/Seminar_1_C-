@@ -12,7 +12,7 @@ if (number < 0) number*= -1;
 while (number > 0)
 {
 int num = number  % 10;
-number  = number / 10;
+number = number / 10;
 sum = sum + num;
 }
 Console.WriteLine($"Сумма всех цифр в числе равна:  {sum}");
