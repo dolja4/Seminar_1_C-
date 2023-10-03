@@ -15,8 +15,8 @@ int count = 1;
 int step = numA;
 while (count < numB)
     {
-    step = step * numA ;
+    step = step * numA;
     count++;
     }
 
-Console.WriteLine($" {numA} в степени {numB} -> {step}");c
+Console.WriteLine($" {numA} в степени {numB} -> {step}");
