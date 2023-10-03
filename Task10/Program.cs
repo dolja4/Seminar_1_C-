@@ -13,3 +13,4 @@ int mid = (number % 100 - number % 10) / 10;
 Console.WriteLine($"{number} -> {mid}");
 }
 else System.Console.WriteLine("Это число не трехзначное");
+
