@@ -15,5 +15,8 @@ int quater = Convert.ToInt32(Console.ReadLine());
 
 string getRangeCoordinats = RangeCoordinats(quater);
 
-string result = getRangeCoordinats != null ? $"Заданному номеру четверти соответсвует диапазон {getRangeCoordinats}": $"некоректный ввод";
+string result = getRangeCoordinats != null 
+        ? $"Заданному номеру четверти соответсвует диапазон {getRangeCoordinats}" 
+        : $"Некоректный ввод";
+
 Console.WriteLine(result);
